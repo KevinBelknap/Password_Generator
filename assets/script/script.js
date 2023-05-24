@@ -1,4 +1,4 @@
-// Generate password based on criteria
+// Function to generate password based on length and character types
 function generatePassword() {
     var length = getPasswordLength();
     var characterTypes = getCharacterTypes();
@@ -18,7 +18,7 @@ function generatePassword() {
     return password;
   }
   
-  // Prompt for password length and validate
+  // Function prompt for password length and validate that it within the criterias confines
   function getPasswordLength() {
     var length = parseInt(prompt("Enter the desired password length (8-128 characters):"));
   
@@ -30,7 +30,7 @@ function generatePassword() {
     return length;
   }
   
-  // Prompt for character types and validate
+  // Function prompt for character types and validate that it within the criterias confines
   function getCharacterTypes() {
     var characterTypes = [];
     var lowercase = confirm("Include lowercase characters?");
@@ -61,7 +61,7 @@ function generatePassword() {
     return characterTypes;
   }
   
-  // Get a random character from a character type
+  // function has characters for criteria so it can generate a random character from these lists
   function getRandomCharacter(type) {
     var characters = {
       lowercase: "abcdefghijklmnopqrstuvwxyz",
@@ -75,10 +75,10 @@ function generatePassword() {
     return characterSet.charAt(randomIndex);
   }
   
-  // Get references to the #generate element
+  // Get references to the generate element
   var generate = document.querySelector("#generate");
   
-  // Write password to the #password input
+  // Write password to the password input
   function writePassword() {
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
@@ -86,6 +86,6 @@ function generatePassword() {
     passwordText.value = password;
   }
   
-  // Add event listener to generate button
+  // Generate button with Event listener for click action
   generate.addEventListener("click", writePassword);
   
