@@ -7,4 +7,5 @@ Click the generate password button to begin. Answer the criteria alerts that pop
 ## Link to Website
 
 ## Resource Links   
-[Paul Keldsen - Web Development](https://www.youtube.com/watch?v=x4HUaiazDes)
+[Paul Keldsen - Web Development](https://www.youtube.com/watch?v=x4HUaiazDes)   
+[Traversy Media](https://www.youtube.com/watch?v=duNmhKgtcsI)
